@@ -1,0 +1,43 @@
+header {
+  grid-area: header;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #34383d;
+  padding: 40px;
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+form {
+  margin-left: 25px;
+  border: 1px solid blue;
+}
+
+input {
+  width: 400px;
+  padding: 4px 10px;
+  font-size: 16px;
+  background-color: #34383d;
+}
+
+h1 {
+  color: white;
+  margin-right: 350px;
+}
+img {
+  width: 80px;
+  height: 80px;
+}
+.user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.user img {
+  width: 30px;
+  height: 30px;
+}

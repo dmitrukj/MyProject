@@ -1,0 +1,10 @@
+.profile-content {
+  grid-area: profile;
+  border: 2px solid gray;
+}
+.profile-content-card {
+  padding: 15px;
+  margin: 25px;
+  border: 2px solid gray;
+  background-color: grey;
+}
