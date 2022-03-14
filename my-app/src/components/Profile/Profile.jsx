@@ -1,29 +1,32 @@
 import React from "react";
+import "../Profile/Profile.modules.css";
 
 const repos = [
   {
-    id: "repo1",
-    name: "RepoName1",
-    author: "Author1",
+    id: "id 45715",
+    name: "Project",
+    author: "@dmitruk89",
     lastCommitDate: "07.03.2022",
     startAmount: 7,
   },
 ];
-
-function User({ name }) {
-  return <span>It's user {name}</span>;
-}
-
-export const UserList = () => {
+const Profile = () => {
   return (
-    <div>
-      {repos.map((item) => (
-        <span key={item.id}>
-          <User name={item.name} />
-        </span>
-      ))}
-    </div>
+    <profile className="profile-content">
+      <div className="profile-content-card">
+        {repos.map((item) => (
+          <h3>{item.name}</h3>
+        ))}
+        <div className="profile-content-data">
+          {repos.map((item) => (
+            <p>
+              {item.id} {item.author} {item.lastCommitDate} {item.startAmount}
+            </p>
+          ))}
+        </div>
+      </div>
+    </profile>
   );
 };
 
-export default User;
+export default Profile;
