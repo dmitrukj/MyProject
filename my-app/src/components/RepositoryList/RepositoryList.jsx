@@ -1,5 +1,4 @@
 import React from "react";
-import "../Profile/Profile.modules.css";
 import RepositoryCard from "../RepositoryCard/RepositoryCard";
 
 const repos = [
@@ -12,14 +11,11 @@ const repos = [
   },
 ];
 
-const Profile = () => {
+const RepositoryList = (props) => {
   return (
-    <section className="profile-content">
-      <div className="profile-content-card">
-        <RepositoryCard />
-      </div>
-    </section>
+    <div className="repoCard">
+      <RepositoryCard />
+    </div>
   );
 };
-
-export default React.memo(Profile);
+export default React.memo(RepositoryList);

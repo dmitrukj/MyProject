@@ -1,0 +1,14 @@
+ul {
+  border: 2px solid blue;
+  background-color: #34383d;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+h3 {
+  color: blue;
+}
+li {
+  list-style-type: none;
+}
