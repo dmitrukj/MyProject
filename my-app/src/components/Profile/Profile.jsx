@@ -1,22 +1,18 @@
 import React from "react";
 import "../Profile/Profile.modules.css";
-import RepositoryCard from "../RepositoryCard/RepositoryCard";
+import RepositoryCard from "./RepositoryCard/RepositoryCard";
 
-const repos = [
-  {
-    id: "id 45715",
-    name: "Project",
-    author: "@dmitruk89",
-    lastCommitDate: "07.03.2022",
-    startAmount: 7,
-  },
-];
-
-const Profile = () => {
+const Profile = (props) => {
   return (
     <section className="profile-content">
       <div className="profile-content-card">
-        <RepositoryCard />
+        <RepositoryCard
+          repos={props.repos}
+          repos2={props.repos2}
+          repos3={props.repos3}
+          repos4={props.repos4}
+          repos5={props.repos5}
+        />
       </div>
     </section>
   );

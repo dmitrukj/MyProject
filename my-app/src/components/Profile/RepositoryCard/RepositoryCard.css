@@ -1,0 +1,33 @@
+ul {
+  border: 2px solid blue;
+  background-color: #34383d;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+h3 {
+  margin-left: 20px;
+}
+li {
+  list-style-type: none;
+  margin-right: 15px;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.item {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+img {
+  width: 20px;
+  height: 20px;
+}
+.item__name img {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
