@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getTopRepositories } from "../../../redux/toprepos/reducer";
+import { getTopRepositories } from "../../Redux/toprepos/reduser";
 
 function fetchTopRepos(params) {
   return [];

@@ -1,4 +1,4 @@
-import { SET_SEARCH_TEXT } from "./actions";
+import { SET_SEARCH_TEXT } from "./action";
 
 export const searchReducer = (state = "", action) => {
   switch (action.type) {

@@ -1,5 +1,5 @@
 import React from "react";
-import RepositoryCard from "./RepositoryCard/RepositoryCard";
+import RepositoryCard from "../RepositoryList/RepositoryCard";
 import { repositoriesData } from "../../../../App";
 
 const RepositoryList = (props) => {
@@ -9,4 +9,4 @@ const RepositoryList = (props) => {
     </div>
   );
 };
-export default React.memo(RepositoryList);
+export default RepositoryList;

@@ -1,4 +1,4 @@
-import { fetchMostRatedRepositories } from "../../pages/homepage/topRepo/servises";
+import { fetchMostRatedRepositories } from "../../Pages/TopRepo/servises";
 const initialState = {
   isLoading: false,
   error: null,
