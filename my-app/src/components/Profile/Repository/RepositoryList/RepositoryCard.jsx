@@ -1,18 +1,18 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import "./RepositoryCard.css";
 
-const Repo1 = (props) => {
+const RepositoryCard = (props) => {
   return (
     <div className="repoCard">
-      {props.repos.map((item) => (
+      {props.repositoriesData.map((item) => (
         <ul>
           <li className="item__name">
-            <img src="images/ava1.jpg" alt="ava1" />
-            <h3>{item.author}</h3>
+            <h3>
+              <NavLink to="/author">{item.author}</NavLink>
+            </h3>
           </li>
           <div className="item">
-            <li>
-              <img src="images/Profile/icon.png" alt="icon" />
-            </li>
             <li>{item.id}</li>
             <li>{item.name}</li>
             <li>{item.lastCommitDate}</li>
@@ -23,4 +23,5 @@ const Repo1 = (props) => {
     </div>
   );
 };
-export default React.memo(Repo1);
+
+export default React.memo(RepositoryCard);
