@@ -1,19 +1,16 @@
 import React from "react";
 import classes from "./Header.modules.css";
+import SearchForm from "./search-form/SearchForm";
 
-const Header = () => {
+const Header = (props) => {
   return (
     <header className={classes.header}>
       <div className="logo">
         <img src="images/Header/logo.png" alt="logo" />
-        <form>
-          <input
-            type="text"
-            name="text"
-            class="search"
-            placeholder="Search MyGitHub..."
-          ></input>
-        </form>
+        <SearchForm
+          onSearchChange={props.onSearchChange}
+          placeholder="Search MyGitHub..."
+        />
       </div>
       <div>
         <h1>MyGitHub</h1>
@@ -27,4 +24,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default React.memo(Header);

@@ -12,17 +12,6 @@ header {
   flex-direction: row;
   align-items: center;
 }
-form {
-  margin-left: 25px;
-  border: 1px solid blue;
-}
-
-input {
-  width: 400px;
-  padding: 4px 10px;
-  font-size: 16px;
-  background-color: #34383d;
-}
 
 h1 {
   color: white;

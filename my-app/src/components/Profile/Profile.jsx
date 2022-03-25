@@ -1,32 +1,16 @@
 import React from "react";
 import "../Profile/Profile.modules.css";
+import RepositoryCard from "./Repository/RepositoryList/RepositoryCard";
+import { repositoriesData } from "../../App";
 
-const repos = [
-  {
-    id: "id 45715",
-    name: "Project",
-    author: "@dmitruk89",
-    lastCommitDate: "07.03.2022",
-    startAmount: 7,
-  },
-];
-const Profile = () => {
+const Profile = (props) => {
   return (
-    <profile className="profile-content">
+    <section className="profile-content">
       <div className="profile-content-card">
-        {repos.map((item) => (
-          <h3>{item.name}</h3>
-        ))}
-        <div className="profile-content-data">
-          {repos.map((item) => (
-            <p>
-              {item.id} {item.author} {item.lastCommitDate} {item.startAmount}
-            </p>
-          ))}
-        </div>
+        <RepositoryCard repositoriesData={repositoriesData} />
       </div>
-    </profile>
+    </section>
   );
 };
 
-export default Profile;
+export default React.memo(Profile);
